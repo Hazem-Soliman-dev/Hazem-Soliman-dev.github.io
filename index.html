@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Global Error Diagnostic Handler -->
+  <script>
+    window.addEventListener('error', function(e) {
+      setTimeout(function() {
+        const errDiv = document.createElement('div');
+        errDiv.style.position = 'fixed';
+        errDiv.style.top = '0';
+        errDiv.style.left = '0';
+        errDiv.style.width = '100%';
+        errDiv.style.backgroundColor = '#ff4444';
+        errDiv.style.color = '#ffffff';
+        errDiv.style.padding = '12px';
+        errDiv.style.zIndex = '999999';
+        errDiv.style.fontFamily = 'monospace';
+        errDiv.style.fontSize = '12px';
+        errDiv.style.whiteSpace = 'pre-wrap';
+        errDiv.innerHTML = '<strong>JS EXCEPTION:</strong> ' + e.message + ' at ' + e.filename + ':' + e.lineno + ':' + e.colno + '<br><br>' + (e.error ? e.error.stack : '');
+        document.body.appendChild(errDiv);
+      }, 100);
+    });
+  </script>
+  
+  <title>Hazem Soliman | Full-Stack Developer | Portfolio Workspace</title>
+  <meta name="description" content="Personal interactive developer portfolio of Hazem Soliman - Full-Stack Developer. Specializing in NestJS, React, Next.js, and AI integrations.">
+  
+  <!-- Font and Styling -->
+  <link rel="stylesheet" href="css/styles.css?v=5">
+  
+  <!-- Lucide Icons Library (Vanilla JS Integration) -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Screen Reader Live region announcer -->
+  <div role="status" aria-live="polite" aria-atomic="true" class="ag-sr-only" id="ag-announcer"></div>
+
+  <!-- Mobile Drawer Overlay -->
+  <div class="ag-sidebar-overlay" id="ag-sidebar-overlay"></div>
+
+  <!-- Full Shell Layout -->
+  <div class="ag-shell">
+    
+    <!-- ── Top Header Navigation ── -->
+    <header class="ag-topbar" id="ag-topbar">
+      <div class="ag-topbar-start">
+        <div class="ag-logo">
+          <span class="ag-logo-text">HAZEM.DEV</span>
+        </div>
+        
+        <div class="ag-breadcrumb">
+          <span class="ag-breadcrumb-slash">/</span>
+          <span class="ag-breadcrumb-active" id="ag-breadcrumb-active">about_me.md</span>
+        </div>
+      </div>
+      
+      <!-- Interactive Search Dropdown -->
+      <div class="ag-search-wrap">
+        <div class="ag-search-input-box">
+          <i data-lucide="search" class="ag-search-icon"></i>
+          <input type="text" id="ag-search-input" class="ag-search-input" placeholder="Search..." autocomplete="off">
+        </div>
+        <div class="ag-search-results hidden" id="ag-search-results"></div>
+      </div>
+      
+      <div class="ag-topbar-end">
+        <!-- Theme Switcher Toggle -->
+        <button class="ag-icon-btn" id="ag-theme-toggle" aria-label="Toggle theme">
+          <i data-lucide="sun" class="sun-icon"></i>
+        </button>
+        
+        <!-- Language Switcher Toggle -->
+        <button class="ag-icon-btn ag-lang-btn" id="ag-lang-toggle" aria-label="Toggle language">
+          <i data-lucide="languages" style="margin-inline-end: var(--ag-sp-1); width:16px; height:16px;"></i>
+          <span id="ag-lang-label">العربية</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- ── Sidebar Explorer File Tree ── -->
+    <aside class="ag-sidebar" id="ag-sidebar">
+      <div class="ag-sidebar-header">
+        <h2 id="ag-explorer-title">Explorer</h2>
+        <i data-lucide="sidebar" style="width: 14px; height: 14px; color: var(--ag-text-3);"></i>
+      </div>
+      
+      <div class="ag-explorer-tree">
+        <div class="ag-tree-node">
+          <!-- Root Workspace Folder -->
+          <div class="ag-folder-node" data-id="root" style="padding-inline-start: var(--ag-sp-2)">
+            <i data-lucide="chevron-right" class="ag-folder-arrow" style="transform: rotate(90deg);"></i>
+            <i data-lucide="folder-open" style="color: var(--ag-accent); width:14px; height:14px;"></i>
+            <span class="ag-folder-name" id="ag-workspace-title">hazem-soliman-dev</span>
+          </div>
+          
+          <!-- Sublist containing files and project folder -->
+          <div class="ag-folder-sublist" id="ag-root-sublist">
+            
+            <!-- about_me.md -->
+            <div class="ag-file-node" data-id="about_me.md">
+              <span class="ag-node-icon"><i data-lucide="file-text" style="color:#3b82f6; width:14px; height:14px;"></i></span>
+              <span class="ag-file-name">about_me.md</span>
+            </div>
+
+            <!-- skills.json -->
+            <div class="ag-file-node" data-id="skills.json">
+              <span class="ag-node-icon"><i data-lucide="braces" style="color:#f59e0b; width:14px; height:14px;"></i></span>
+              <span class="ag-file-name">skills.json</span>
+            </div>
+
+            <!-- projects/ folder -->
+            <div class="ag-tree-node">
+              <div class="ag-folder-node ag-folder-toggle" data-id="projects">
+                <i data-lucide="chevron-right" class="ag-folder-arrow"></i>
+                <i data-lucide="folder" style="color: var(--ag-accent); width:14px; height:14px;"></i>
+                <span class="ag-folder-name">projects</span>
+              </div>
+              
+              <div class="ag-folder-sublist collapsed" id="ag-projects-sublist">
+                <div class="ag-file-node" data-id="medflow.json">
+                  <span class="ag-node-icon"><i data-lucide="braces" style="color:#f59e0b; width:12px; height:12px;"></i></span>
+                  <span class="ag-file-name">medflow.json</span>
+                </div>
+                <div class="ag-file-node" data-id="otasky.json">
+                  <span class="ag-node-icon"><i data-lucide="braces" style="color:#f59e0b; width:12px; height:12px;"></i></span>
+                  <span class="ag-file-name">otasky.json</span>
+                </div>
+                <div class="ag-file-node" data-id="nexflow.json">
+                  <span class="ag-node-icon"><i data-lucide="braces" style="color:#f59e0b; width:12px; height:12px;"></i></span>
+                  <span class="ag-file-name">nexflow.json</span>
+                </div>
+                <div class="ag-file-node" data-id="hireflow.json">
+                  <span class="ag-node-icon"><i data-lucide="braces" style="color:#f59e0b; width:12px; height:12px;"></i></span>
+                  <span class="ag-file-name">hireflow.json</span>
+                </div>
+                <div class="ag-file-node" data-id="insight_agent.json">
+                  <span class="ag-node-icon"><i data-lucide="braces" style="color:#f59e0b; width:12px; height:12px;"></i></span>
+                  <span class="ag-file-name">insight_agent.json</span>
+                </div>
+                <div class="ag-file-node" data-id="proposligo.json">
+                  <span class="ag-node-icon"><i data-lucide="braces" style="color:#f59e0b; width:12px; height:12px;"></i></span>
+                  <span class="ag-file-name">proposligo.json</span>
+                </div>
+                <div class="ag-file-node" data-id="electro_pi.json">
+                  <span class="ag-node-icon"><i data-lucide="braces" style="color:#f59e0b; width:12px; height:12px;"></i></span>
+                  <span class="ag-file-name">electro_pi.json</span>
+                </div>
+                <div class="ag-file-node" data-id="mosanada.json">
+                  <span class="ag-node-icon"><i data-lucide="braces" style="color:#f59e0b; width:12px; height:12px;"></i></span>
+                  <span class="ag-file-name">mosanada.json</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- experience.csv -->
+            <div class="ag-file-node" data-id="experience.csv">
+              <span class="ag-node-icon"><i data-lucide="table" style="color:#10b981; width:14px; height:14px;"></i></span>
+              <span class="ag-file-name">experience.csv</span>
+            </div>
+
+            <!-- education.txt -->
+            <div class="ag-file-node" data-id="education.txt">
+              <span class="ag-node-icon"><i data-lucide="file" style="color:#6b7280; width:14px; height:14px;"></i></span>
+              <span class="ag-file-name">education.txt</span>
+            </div>
+
+            <!-- contact_me.js -->
+            <div class="ag-file-node" data-id="contact_me.js">
+              <span class="ag-node-icon"><i data-lucide="file-code-2" style="color:#eab308; width:14px; height:14px;"></i></span>
+              <span class="ag-file-name">contact_me.js</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ── Main Editor Tabs and Canvas ── -->
+    <main class="ag-editor-pane">
+      
+      <!-- Open tabs and view controls -->
+      <div class="ag-tabs-bar">
+        <div class="ag-tabs-list" id="ag-tabs-list">
+          <!-- Active tabs rendered dynamically -->
+        </div>
+        
+        <div class="ag-editor-controls">
+          <button class="ag-editor-ctrl-btn" id="ag-btn-code-mode">Code</button>
+          <button class="ag-editor-ctrl-btn active" id="ag-btn-preview-mode">Preview</button>
+        </div>
+      </div>
+      
+      <!-- Editor Canvas -->
+      <div class="ag-editor-body" id="ag-editor-content">
+        <!-- Renders raw code syntax or visual preview based on states -->
+      </div>
+    </main>
+
+    <!-- ── Simulated Terminal BASH Console ── -->
+    <section class="ag-terminal-pane" id="ag-terminal-pane">
+      <div class="ag-terminal-header" id="ag-terminal-header">
+        <div class="ag-terminal-title">
+          <i data-lucide="terminal" style="width: 14px; height: 14px; color: #a0a3bd;"></i>
+          <span id="ag-terminal-title">Terminal — bash</span>
+        </div>
+        
+        <div class="ag-terminal-controls">
+          <button class="ag-terminal-btn" id="ag-terminal-collapse-btn" aria-label="Minimize terminal">
+            <i data-lucide="chevron-down" style="width: 14px; height: 14px;"></i>
+          </button>
+        </div>
+      </div>
+      
+      <div class="ag-terminal-body-wrap" id="ag-terminal-body-wrap">
+        <div class="ag-terminal-body" id="ag-terminal-body">
+          <div class="ag-terminal-output" id="ag-terminal-output">
+            <!-- Simulated commands output goes here -->
+          </div>
+        </div>
+        
+        <div class="ag-terminal-input-row">
+          <span class="ag-terminal-input-prompt" id="ag-terminal-input-prompt">hazem-dev@portfolio:~$</span>
+          <input type="text" id="ag-terminal-input" class="ag-terminal-input" autocomplete="off" aria-label="Terminal input line">
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Slim Status Footer Bar (Desktop view) ── -->
+    <footer class="ag-statusbar" id="ag-statusbar">
+      <div class="ag-statusbar-start">
+        <div class="ag-status-item branch" id="ag-status-branch">
+          <i data-lucide="git-branch" style="width: 12px; height: 12px;"></i>
+          git branch: main
+        </div>
+        <div class="ag-status-item" id="ag-status-ready">
+          Ready
+        </div>
+      </div>
+      
+      <div class="ag-statusbar-center">
+        <div class="ag-status-item" id="ag-status-message">
+          Hazem is open to remote opportunities
+        </div>
+      </div>
+      
+      <div class="ag-statusbar-end">
+        <div class="ag-status-item" style="font-family: var(--ag-font-mono);">
+          LF | UTF-8 | <span id="ag-status-file">about_me.md</span>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- ── Mobile Footer Navigation (Mandatory on <640px) ── -->
+    <nav class="ag-footer-nav" role="navigation" aria-label="Main Navigation">
+      <button class="ag-footer-btn" data-key="files" aria-label="Toggle Files Explorer">
+        <i data-lucide="folder-open" style="width: 20px; height: 20px;"></i>
+        <span class="ag-footer-label">Explorer</span>
+      </button>
+      <button class="ag-footer-btn active" data-key="editor" aria-label="Show Editor">
+        <i data-lucide="code-2" style="width: 20px; height: 20px;"></i>
+        <span class="ag-footer-label">Editor</span>
+      </button>
+      <button class="ag-footer-btn" data-key="run" aria-label="Open Terminal Shell">
+        <i data-lucide="play" style="width: 20px; height: 20px;"></i>
+        <span class="ag-footer-label">Run</span>
+      </button>
+      <button class="ag-footer-btn" data-key="search" aria-label="Search Workspace">
+        <i data-lucide="search" style="width: 20px; height: 20px;"></i>
+        <span class="ag-footer-label">Search</span>
+      </button>
+      <button class="ag-footer-btn" data-key="settings" aria-label="View Contact File">
+        <i data-lucide="settings" style="width: 20px; height: 20px;"></i>
+        <span class="ag-footer-label">Contact</span>
+      </button>
+    </nav>
+
+  </div>
+
+  <!-- Core Javascript Bootstrapper -->
+  <script src="js/translations.js?v=5"></script>
+  <script src="js/theme.js?v=5"></script>
+  <script src="js/lang.js?v=5"></script>
+  <script src="js/app.js?v=5"></script>
+  <script>
+    // Initialize Lucide icons on document load
+    document.addEventListener('DOMContentLoaded', () => {
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      }
+      
+      // Re-trigger icon creation on theme/lang changes or tab switches
+      window.addEventListener('langChanged', () => {
+        if (typeof lucide !== 'undefined') {
+          setTimeout(() => lucide.createIcons(), 50);
+        }
+      });
+      window.addEventListener('themeChanged', () => {
+        if (typeof lucide !== 'undefined') {
+          setTimeout(() => lucide.createIcons(), 50);
+        }
+      });
+      
+      // Intercept DOM node inserts to dynamically inject Lucide icons on rendering
+      const observer = new MutationObserver(() => {
+        if (typeof lucide !== 'undefined') {
+          lucide.createIcons();
+        }
+      });
+      const editorContent = document.getElementById('ag-editor-content');
+      if (editorContent) {
+        observer.observe(editorContent, { childList: true, subtree: true });
+      }
+    });
+  </script>
+</body>
+</html>
