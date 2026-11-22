@@ -39,10 +39,10 @@ window.t = {
     location: 'Giza, Egypt',
     email: 'hazem.soliman.dev@gmail.com',
     aboutBio: 'I am a highly motivated Full-Stack Developer specializing in building production-ready SaaS platforms, enterprise business ecosystems, and AI-integrated web applications. I love creating software that solves real-world problems and delivers premium user experiences.',
-    aboutCurrently: 'Currently building MedFlow at XPilot — a SaaS medical platform with 5 dashboards.',
-    aboutContributed: 'Previously contributed to Otasky (freelance marketplace) and KONTAINAR (4-platform ERP/CRM).',
+    aboutCurrently: 'Software Engineering Intern at Raya IT — RTU Integration & SW Development Track (Sep 2026 – Present); completed soft skills, Foundations, and Sprint 1 (Networks & Web).',
+    aboutContributed: 'Built MedFlow at XPilot — a SaaS medical platform with 5 dashboards; previously contributed to Otasky (live marketplace) and KONTAINAR (4-platform ERP/CRM).',
     aboutShipped: 'Recently shipped AI-driven and SaaS tools like NexFlow, HireFlow, InsightAgent, and ProposliGo.',
-    aboutEducation: 'B.Sc. in Business Information Systems — Capital University (Helwan), Graduated 2026 (Grade: 82.67%).',
+    aboutEducation: 'B.Sc. in Business Information Systems — Capital University (Helwan), Graduated 2026 (GPA: 81.64%).',
     aboutLeadership: 'Leadership role: Team Leader at Digitopia Hackathon 2025 (led 5-member team to deliver an MVP in 48h) and DEPI Group Leader.',
 
     // Skills Content
@@ -134,7 +134,7 @@ window.t = {
         title: 'ProposliGo — AI Proposal Generator',
         desc: 'AI tool generating customized, high-converting job proposals for freelancers based on target styles.',
         bullets: [
-          'Developed proposal engine generating copy with selectable tones (aggressive, professional, concise).',
+          'Developed proposal engine generating copy with a selectable writing tone.',
           'Configured credit-based payment and subscription gateways using Polar integration.',
           'Built Clerk user profile management alongside historic proposal history archives.'
         ]
@@ -195,24 +195,31 @@ window.t = {
     expTypeLabel: 'Type:',
     experience: [
       {
-        role: 'Full-Stack Developer',
-        company: 'XPilot (MedFlow)',
-        period: '03/2026 – Present',
-        type: 'Remote',
-        desc: 'Leading engineering on MedFlow medical SaaS portal. Structuring clinic onboarding architectures, automated doctor schedules, patient check-in queues, and multi-tenant inventory control panels.'
+        role: 'Software Engineering Intern',
+        company: 'Raya IT (RTU Program)',
+        period: '09/2026 – Present',
+        type: 'Cairo',
+        desc: 'Interning in the RTU Integration & SW Development track at Raya IT. Completed soft skills, Foundations, and Sprint 1 (Networks & Web) training; continuing through the remaining track curriculum.'
       },
       {
         role: 'Full-Stack Developer',
+        company: 'XPilot (MedFlow)',
+        period: '04/2026 – 05/2026',
+        type: 'Remote (Dubai)',
+        desc: 'Led engineering on the MedFlow medical SaaS portal. Structured clinic onboarding architectures, automated doctor schedules, patient check-in queues, and multi-tenant inventory control panels.'
+      },
+      {
+        role: 'Full-Stack Developer Intern',
         company: 'Mega Serve (Otasky)',
         period: '02/2026 – 03/2026',
         type: 'Remote (Australia)',
         desc: 'Contributed to frontend feature rollouts and compliance backend frameworks for Otasky freelance marketplace. Programmed dispute APIs, ticketing modules, and validation models.'
       },
       {
-        role: 'Full-Stack Developer',
+        role: 'Full-Stack Developer Intern',
         company: 'Pencil Studio',
-        period: '09/2025 – 02/2026',
-        type: 'Remote',
+        period: '09/2025 – 01/2026',
+        type: 'Remote (Egypt)',
         desc: 'Developed responsive client-facing web applications, CRM databases, and back-office portals. Integrated payment and messaging APIs.'
       },
       {
@@ -233,7 +240,7 @@ window.t = {
       {
         school: 'Capital University (Helwan)',
         program: 'B.Sc. Business Information Systems (2022-2026)',
-        grade: '82.67% (Very Good)'
+        grade: '81.64%'
       },
       {
         school: 'NTI (National Telecommunication Institute)',
@@ -313,10 +320,10 @@ window.t = {
     location: 'الجيزة، مصر',
     email: 'hazem.soliman.dev@gmail.com',
     aboutBio: 'أنا مطور ويب متكامل (Full-Stack) شغوف ببناء منصات SaaS الجاهزة للإنتاج، والأنظمة البيئية للمؤسسات، وتطبيقات الويب المدمجة بالذكاء الاصطناعي. أهتم بإنشاء برمجيات تحل مشاكل حقيقية وتقدم تجارب مستخدم ممتازة.',
-    aboutCurrently: 'أقوم حالياً ببناء منصة MedFlow في شركة XPilot — وهي منصة طبية كخدمة (SaaS) تحتوي على 5 لوحات تحكم.',
-    aboutContributed: 'ساهمت سابقاً في Otasky (منصة للعمل الحر) و KONTAINAR (نظام ERP/CRM متكامل من 4 منصات).',
+    aboutCurrently: 'أعمل حالياً كمتدرب هندسة برمجيات في شركة Raya IT — ضمن مسار RTU للتكامل وتطوير البرمجيات (سبتمبر 2026 – الحالي)؛ أنهيت تدريب المهارات الشخصية ومرحلة Foundations والسبرينت الأول (الشبكات والويب).',
+    aboutContributed: 'بنيت منصة MedFlow في شركة XPilot — منصة طبية كخدمة (SaaS) تحتوي على 5 لوحات تحكم؛ وساهمت سابقاً في Otasky (منصة عمل حر حية) و KONTAINAR (نظام ERP/CRM متكامل من 4 منصات).',
     aboutShipped: 'أطلقت مؤخراً أدوات برمجية مدعومة بالذكاء الاصطناعي مثل NexFlow و HireFlow و InsightAgent و ProposliGo.',
-    aboutEducation: 'بكالوريوس نظم معلومات الأعمال — جامعة حلوان (كلية التجارة وإدارة الأعمال)، تخرج عام 2026 (التقدير: 82.67% جيد جداً).',
+    aboutEducation: 'بكالوريوس نظم معلومات الأعمال — جامعة حلوان (كلية التجارة وإدارة الأعمال)، تخرج عام 2026 (المعدل التراكمي: 81.64%).',
     aboutLeadership: 'الأدوار القيادية: قائد فريق في هاكاثون Digitopia 2025 (قدت فريقاً من 5 أعضاء لتقديم منتج MVP خلال 48 ساعة) وقائد مجموعة في مبادرة DEPI.',
 
     // Skills Content
@@ -408,7 +415,7 @@ window.t = {
         title: 'ProposliGo — نظام توليد عروض العمل بالذكاء الاصطناعي',
         desc: 'أداة ذكاء اصطناعي لكتابة وتوليد عروض وطلبات مشاريع احترافية بناءً على نبرة أسلوب يختارها المستخدم.',
         bullets: [
-          'تطوير محرك توليد مقترحات وعروض العمل بنبرات متعددة (هجومية، احترافية، مختصرة ومباشرة).',
+          'تطوير محرك توليد مقترحات وعروض العمل بنبرة كتابة يختارها المستخدم.',
           'دمج أنظمة الفوترة والاشتراكات بنظام النقاط والائتمان عبر واجهة ربط Polar (محولة من Stripe).',
           'برمجة بوابات التسجيل الآمنة Clerk مع توفير أرشيف كامل للمقترحات وعروض العمل التاريخية لكل مستخدم.'
         ]
@@ -469,24 +476,31 @@ window.t = {
     expTypeLabel: 'نوع العمل:',
     experience: [
       {
-        role: 'مطور ويب متكامل (Full-Stack Developer)',
-        company: 'XPilot (MedFlow)',
-        period: '03/2026 – الحالي',
-        type: 'عن بعد (Remote)',
-        desc: 'قيادة التطوير البرمجي لمنصة MedFlow الطبية (SaaS). تخطيط هياكل تهيئة العيادات، وأنظمة الجدولة التلقائية للأطباء، وإدارة قوائم المريض الطبية، والمخازن متعددة المستأجرين.'
+        role: 'متدرب هندسة برمجيات (Software Engineering Intern)',
+        company: 'Raya IT (برنامج RTU)',
+        period: '09/2026 – الحالي',
+        type: 'القاهرة',
+        desc: 'متدرب هندسة برمجيات ضمن مسار RTU للتكامل وتطوير البرمجيات في راية. أنهيت تدريب المهارات الشخصية ومرحلة Foundations والسبرينت الأول (الشبكات والويب)، وأواصل استكمال باقي منهج المسار التدريبي.'
       },
       {
         role: 'مطور ويب متكامل (Full-Stack Developer)',
+        company: 'XPilot (MedFlow)',
+        period: '04/2026 – 05/2026',
+        type: 'عن بعد (دبي)',
+        desc: 'قدت التطوير البرمجي لمنصة MedFlow الطبية (SaaS). شمل العمل هيكلة تهيئة العيادات، وأنظمة الجدولة التلقائية للأطباء، وإدارة قوائم انتظار المرضى، والمخازن متعددة المستأجرين.'
+      },
+      {
+        role: 'متدرب تطوير ويب متكامل (Full-Stack Developer Intern)',
         company: 'Mega Serve (Otasky)',
         period: '02/2026 – 03/2026',
         type: 'عن بعد (أستراليا)',
         desc: 'المساهمة في تطوير ميزات الواجهة الأمامية وأنظمة الواجهة الخلفية الخاصة بالامتثال والحلول القانونية لسوق Otasky للعمل الحر. برمجة واجهات حل النزاعات ورفع التذاكر.'
       },
       {
-        role: 'مطور ويب متكامل (Full-Stack Developer)',
+        role: 'متدرب تطوير ويب متكامل (Full-Stack Developer Intern)',
         company: 'Pencil Studio',
-        period: '09/2025 – 02/2026',
-        type: 'عن بعد (Remote)',
+        period: '09/2025 – 01/2026',
+        type: 'عن بعد (مصر)',
         desc: 'تطوير مواقع وتطبيقات ويب سريعة الاستجابة موجهة للعملاء، قواعد بيانات علاقات العملاء (CRM)، وأنظمة المكاتب الخلفية. دمج بوابات الدفع وإرسال الإشعارات.'
       },
       {
@@ -507,7 +521,7 @@ window.t = {
       {
         school: 'جامعة حلوان (Capital University)',
         program: 'بكالوريوس نظم معلومات الأعمال (Business Information Systems) للفترة 2022-2026',
-        grade: '82.67% (جيد جداً مرتفع)'
+        grade: '81.64%'
       },
       {
         school: 'معهد الاتصالات القومي (NTI)',
