@@ -109,11 +109,11 @@ ${strings.aboutLeadership}
   
   if (fileName === 'skills.json') {
     const skillsData = {
-      languages: ["TypeScript", "JavaScript", "PHP", "Python", "C#", "SQL"],
-      backend: ["NestJS", "Node.js", "Express", "Laravel", ".NET"],
+      languages: ["TypeScript", "JavaScript", "Java", "PHP", "Python", "C#", "SQL"],
+      backend: ["NestJS", "Node.js", "Express", "Spring Boot", "FastAPI", "Laravel", ".NET"],
       frontend: ["React", "Next.js", "Angular", "Tailwind CSS", "ShadCN", "Radix UI", "Material UI"],
       databases_orms: ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Prisma", "Sequelize", "Drizzle"],
-      cloud_devops: ["AWS", "Supabase", "Docker", "Vercel", "Railway", "Cloudflare", "Git"],
+      cloud_devops: ["AWS", "Supabase", "Docker", "Vercel", "Railway", "Firebase", "Cloudflare", "Git"],
       integrations: ["Stripe", "Polar", "Clerk", "Twilio", "Swagger", "Cloudinary", "UploadThing"],
       ai_integrations: ["OpenAI", "Groq"]
     };
@@ -243,11 +243,11 @@ function getPreviewHTML(fileName, lang) {
 
   if (fileName === 'skills.json') {
     const categories = [
-      { key: 'languages', title: strings.skillsLanguages, list: ["TypeScript", "JavaScript", "PHP", "Python", "C#", "SQL"] },
-      { key: 'backend', title: strings.skillsBackend, list: ["NestJS", "Node.js", "Express", "Laravel", ".NET"] },
+      { key: 'languages', title: strings.skillsLanguages, list: ["TypeScript", "JavaScript", "Java", "PHP", "Python", "C#", "SQL"] },
+      { key: 'backend', title: strings.skillsBackend, list: ["NestJS", "Node.js", "Express", "Spring Boot", "FastAPI", "Laravel", ".NET"] },
       { key: 'frontend', title: strings.skillsFrontend, list: ["React", "Next.js", "Angular", "Tailwind CSS", "ShadCN", "Radix UI", "Material UI"] },
       { key: 'databases_orms', title: strings.skillsDatabases, list: ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Prisma", "Sequelize", "Drizzle"] },
-      { key: 'cloud_devops', title: strings.skillsCloud, list: ["AWS", "Supabase", "Docker", "Vercel", "Railway", "Cloudflare", "Git"] },
+      { key: 'cloud_devops', title: strings.skillsCloud, list: ["AWS", "Supabase", "Docker", "Vercel", "Railway", "Firebase", "Cloudflare", "Git"] },
       { key: 'integrations', title: strings.skillsIntegrations, list: ["Stripe", "Polar", "Clerk", "Twilio", "Swagger", "Cloudinary", "UploadThing"] },
       { key: 'ai_integrations', title: strings.skillsAI, list: ["OpenAI", "Groq"] }
     ];
@@ -447,7 +447,7 @@ function getPreviewHTML(fileName, lang) {
 
 function getTechStack(key) {
   const stacks = {
-    medflow: ["NestJS", "TypeScript", "Prisma", "PostgreSQL", "Next.js", "Zustand", "React Query", "Radix UI", "Cloudinary", "Twilio", "Railway"],
+    medflow: ["NestJS", "TypeScript", "Prisma", "PostgreSQL", "Next.js", "Zustand", "React Query", "Radix UI", "Twilio", "Railway"],
     otasky: ["Next.js", "Node.js", "Express", "TypeScript", "PostgreSQL", "Sequelize", "Stripe", "AWS", "Twilio", "Firebase"],
     nexflow: ["Next.js 16", "React 19", "Tailwind CSS v4", "ShadCN", "Radix UI", "Prisma", "PostgreSQL", "NextAuth.js v5", "dnd-kit", "Recharts", "jsPDF"],
     hireflow: ["Next.js 16", "TypeScript", "Prisma", "PostgreSQL", "Groq SDK", "dnd-kit", "UploadThing", "Nodemailer", "Recharts", "Tailwind CSS"],
@@ -946,11 +946,11 @@ function executeTerminalCommand(cmdLine) {
 
     case 'skills':
       responseHTML = `<div class="term-skills-list">
-        <strong>${strings.skillsLanguages}:</strong> TypeScript, JavaScript, PHP, Python, C#, SQL<br/>
-        <strong>${strings.skillsBackend}:</strong> NestJS, Node.js, Express, Laravel, .NET<br/>
+        <strong>${strings.skillsLanguages}:</strong> TypeScript, JavaScript, Java, PHP, Python, C#, SQL<br/>
+        <strong>${strings.skillsBackend}:</strong> NestJS, Node.js, Express, Spring Boot, FastAPI, Laravel, .NET<br/>
         <strong>${strings.skillsFrontend}:</strong> React, Next.js, Angular, Tailwind CSS, ShadCN<br/>
         <strong>${strings.skillsDatabases}:</strong> PostgreSQL, MySQL, MongoDB, Redis, Prisma, Drizzle<br/>
-        <strong>${strings.skillsCloud}:</strong> AWS, Supabase, Docker, Vercel, Railway, Cloudflare, Git
+        <strong>${strings.skillsCloud}:</strong> AWS, Supabase, Docker, Vercel, Railway, Firebase, Cloudflare, Git
       </div>`;
       break;
 
